@@ -295,7 +295,7 @@ a:hover span::before{
 }
 .card-text {
     position: absolute;
-    margin-left: 650px;
+    margin-left: 624px;
     margin-top: 30px;
     width: 40%;
 }
