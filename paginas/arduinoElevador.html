@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styleArduinos.css">
+        <title> Elevador em Arduino </title> 
+
+    </head>
+    <body>
+
+        <header class="header-container">
+            <div class="header">
+                <div class="checkbox-container">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="toggle">
+                        <label class="checkbox" for="toggle">
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                        </label>
+                        <div class="menu"></div>
+                        <nav class="menu-itens">
+                            <ul>
+                                <li>
+                                    <a href="../index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="../paginas/sobre.html">Sobre</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="container-titulo">
+                    <div class="titulo">
+                        <h1>Elevador em Arduino</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="container-projetos">
+            <div class="link-projeto">
+                <a href="https://www.tinkercad.com/things/lww6Y95pzNU-as-2-elevador/editel?sharecode=ioziTgU59Yv6DazafWXObl8Y2T3TSk-SZ7qzlnaHiFk">Link do Projeto</a>
+            </div>
+            <div class="paragrafo-container">
+                <div class="imagem-projeto">
+                        <img src="../imagens/arduinos/elevador.png">
+                </div>
+                <div class="paragrafo-text">
+                    <p>O projeto consistia em um protótipo em Arduino de uma <b>simulação do funcionamento de um elevador</b> com botões para subir e descer (em cada andar), botões para ir aos andares (dentro do elevador), botão para fechar a porta, para ligar e desligar o elevador, para indicar uma emergência, LEDs para indicar o estado do elevador, LEDs para indicar a posição do elevador e chamadas; tudo <b>seguindo o diagrama feito pelos professores em sala</b>.</p>
+                </div>
+            </div>
+            <div class="paragrafo-container">
+                <div class="paragrafo-text2">
+                    <p>O elevador <b>inicia desligado</b>, e permanece assim até que seja apertado o <b>botão de ligar</b>. Assim, ele passa para o estado de <b>OCIOSO</b>, e a <b>luz da posição</b> dele é <b>ligada (no primeiro andar - luz vermelha)</b>. </p>
+                </div>
+                <div class="imagem-projeto2">
+                        <img src="../imagens/arduinos/elevador1.png">
+                </div>
+            </div>
+            <div class="paragrafo-container">
+                <div class="imagem-projeto">
+                        <img src="../imagens/arduinos/elevador2.png">
+                </div>
+                <div class="paragrafo-text">
+                    <p>Cada faixa de <b>NeoPixel</b> representa uma sinalização única. A faixa de <b>"destino"</b>, em vermelho, é <b>onde o elevador se encontra no momento</b>. <b>"Elevador"</b> representa um <b>para onde a pessoa que está dentro do elevador deseja ir</b>. <b>"Desce"</b> significa uma <b>chamada naquele andar representado, para descer</b>. E <b>"sobe"</b> representa a mesma coisa, porém para <b>subir</b>. </p>
+                </div>
+            </div>
+            <div class="paragrafo-container">
+                <div class="paragrafo-text2">
+                    <p>O elevador dá <b>preferência para as chamadas dentro dele e chamadas para subir, dado que ele está subindo</b>. Assim que ele <b>chega no andar requisitado</b>, e a pessoa entra no elevador, <b>a luz de chamada naquele andar se apaga</b>, e ele segue para buscar alguém nos andares acima ou abaixo. </p>
+                </div>
+                <div class="imagem-projeto2">
+                        <img src="../imagens/arduinos/elevador3.png">
+                </div>
+            </div>
+            <div class="paragrafo-container">
+                <div class="galeria-imagens">
+                    <img src="../imagens/arduinos/leds1.png"/>
+                    <img src="../imagens/arduinos/placa1.png"/>
+                    <img src="../imagens/arduinos/placa2.png"/>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <a class=botaovoltar href="../paginas/arduinos.html"><button class="bn632-hover bn25">Voltar</button></a>
+            Lara Franco Chaves Vidal - 2022
+            <a class=botaoproximo href="../paginas/arduinoJogodaVelha.html"><button class="bn632-hover bn25">Próximo</button></a>
+        </footer>
+    </body>
+</html>

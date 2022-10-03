@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styleArduinos.css">
+        <title> Semáforo em Arduino </title> 
+
+    </head>
+    <body>
+
+        <header class="header-container">
+            <div class="header">
+                <div class="checkbox-container">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="toggle">
+                        <label class="checkbox" for="toggle">
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                        </label>
+                        <div class="menu"></div>
+                        <nav class="menu-itens">
+                            <ul>
+                                <li>
+                                    <a href="../index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="../paginas/sobre.html">Sobre</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="container-titulo">
+                    <div class="titulo">
+                        <h1>Semáforo em Arduino</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="container-projetos">
+            <div class="link-projeto">
+                <a href="https://www.tinkercad.com/things/aQRkVvbrCFF-semaforo/editel?sharecode=63Pc8qOQwGvXO70TDEV1Q3uUdOUsYMX3j6ETEvLvBUo">Link do Projeto</a>
+            </div>
+            <div class="paragrafo-container">
+                <div class="imagem-projeto">
+                        <img src="../imagens/arduinos/arduino3.png">
+                </div>
+                <div class="paragrafo-text">
+                    <p>O projeto era construir um  protótipo  de <b>sistema de semáforos sincronizados</b> baseado no Arduino para um <b>cruzamento com via primária de controle</b> e <b>via secundária</b>, ambas com <b>botões para pedestres</b>. O sistema possui dois semáforos, cada um representado por um conjunto de 3 LEDs (vermelho, amarelo e verde). O tempo de ligado e desligado de cada LED foi programado de acordo com o diagrama feito pelo professor apresentado em sala.</p>
+                </div>
+            </div>
+            <div class="paragrafo-container">
+                <div class="paragrafo-text2">
+                    <p>Após feita a parte 1 no Arduino físico, tivemos que passar para o TinkerCad para possibilitar o uso detalhado do potenciômetro. A <b>via principal</b> sofre <b>variação no fluxo de veículos</b>, dependendo de fatores aleatórios imprevisíveis. Por outro lado, <b>o fluxo na via secundária é constante</b>. Por isso, optou-se pela instalação de um <b>sensor na via principal (potenciômetro)</b>, possibilitando ajustar os tempos de verde de cada semáforo de forma a <b>otimizar o fluxo global de veículos</b>. </p>
+                </div>
+                <div class="imagem-projeto2">
+                        <img src="../imagens/arduinos/semaforo.png">
+                </div>
+            </div>
+            <div class="paragrafo-container">
+                <div class="imagem-projeto">
+                        <img src="../imagens/arduinos/arduino.png">
+                </div>
+                <div class="paragrafo-text">
+                    <p>O circuito inclui <b>dois botões para solicitação de travessia de pedestres</b>, um para cada via. O acionamento de qualquer um dos botões deverá causar o respectivo tratamento, <b>fazendo com que os dois semáforos de veículos fiquem no vermelho</b>, enquanto os dois <b>semáforos de pedestres fiquem no verde</b> a fim de permitir a travessia. O acionamento do botão <u><b>não causa o fechamento imediato para os veículos</b></u>, é preciso aguardar ao menos o <b>fim do ciclo corrente</b> dos semáforos dos veículos, para então, fazer o tratamento efetivo do acionamento do botão.</p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <a class=botaovoltar href="../paginas/arduinos.html"><button class="bn632-hover bn25">Voltar</button></a>
+            Lara Franco Chaves Vidal - 2022
+            <a class=botaoproximo href="../paginas/arduinoElevador.html"><button class="bn632-hover bn25">Próximo</button></a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styleArduinos.css">
+        <title> Jogo da Velha em Arduino </title> 
+
+    </head>
+    <body>
+
+        <header class="header-container">
+            <div class="header">
+                <div class="checkbox-container">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="toggle">
+                        <label class="checkbox" for="toggle">
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                        </label>
+                        <div class="menu"></div>
+                        <nav class="menu-itens">
+                            <ul>
+                                <li>
+                                    <a href="../index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="../paginas/sobre.html">Sobre</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="container-titulo">
+                    <div class="titulo">
+                        <h1>Jogo da Velha em Arduino</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="container-projetos">
+            <div class="link-projeto">
+                <a href="https://www.tinkercad.com/things/9CZKBkMjaVp-atividade-somativa-as-4-jogo-da-velha-distribuido/editel?sharecode=BxPwK8RsPnMAHb8kVvQlJbDcVgJVlbPWmrWhLbPjudU">Link do Projeto</a>
+            </div>
+            <div class="paragrafo-container">
+                <div class="imagem-projeto">
+                        <img src="../imagens/arduinos/jogoVelha2.png">
+                </div>
+                <div class="paragrafo-text">
+                    <p>O projeto consiste em um <b>jogo da velha distribuído</b> em Arduino com <b>comunicação bidirecional entre os microcontroladores</b>. As jogadas são <b>alternadas</b> pelos jogadores, <b>iniciando pelo Jogador 1</b>, representado no caso pela cor vermelha. Sempre que for a <b>vez de um jogador</b>, os <b>pixels da lateral direita irão ficar verdes</b>, indicando que o outro jogador está aguardando. A <b>visão do jogo é atualizada a cada mensagem</b> que indica uma marcação no tabuleiro.</p>
+                </div>
+            </div>
+            <div class="paragrafo-container">
+                <div class="paragrafo-text2">
+                    <p>No jogo, as jogadas são representadas pela <b>matriz de NeoPixels</b>, e feitas pelo <b>teclado numérico</b>. O Jogador 1 é representado pela cor vermelha, e o Jogador 2 pela cor azul. Não é possível que uma jogada seja sobreposta à outra. <b>O jogador só pode marcar um espaço no tabuleiro no caso que aquele esteja vazio</b>.</p>
+                </div>
+                <div class="imagem-projeto2">
+                        <img src="../imagens/arduinos/jogoVelha.png">
+                </div>
+            </div>
+            <div class="paragrafo-container">
+                <div class="imagem-projeto">
+                        <img src="../imagens/arduinos/jogoVelha3.png">
+                </div>
+                <div class="paragrafo-text">
+                    <p>Ao <b>fim do jogo</b>, pode-se ter 3 possíveis finais: <b>O Jogador 1 vence o jogo</b>, fazendo o tabuleiro ficar completamente aceso com <b>luzes vermelhas</b>; <b>O Jogador 2 vence o jogo</b>, fazendo o tabuleiro ficar completamente aceso com <b>luzes azuis</b>; ou é um empate. <b>Nenhum jogador venceu</b>, o que faz o tabuleiro ficar completamente aceso com <b>luzes cinzas</b>.</p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <a class=botaovoltar href="../paginas/arduinos.html"><button class="bn632-hover bn25">Voltar</button></a>
+            Lara Franco Chaves Vidal - 2022
+            <a class=botaoproximo href="../paginas/jogo.html"><button class="bn632-hover bn25">Próximo</button></a>
+        </footer>
+    </body>
+</html>

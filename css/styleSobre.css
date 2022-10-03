@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+/* HEADER */ 
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background: #a45047;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* APRESENTAÇÃO */
+
+.perfil{
+    display: flex;
+    margin-left: 30px;
+    width: 100%;
+}
+.perfil-foto{
+    height: 98%;
+    width: 300px;
+    border-radius: 35px;
+}
+.contato{
+    margin-top: 1rem;
+    display: flex;
+    position: absolute;
+    margin-top: 284px;
+    margin-left: 349px;
+}
+.contato a{
+    text-decoration: none;
+    color: #e1bf43;
+    padding: 1rem 4rem;
+    border: 3px solid #E4BE2E;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.menu-itens a {
+    text-decoration: none;
+    color: #ffffff;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease-in-out;
+}
+.contato a:hover{
+    background-color: #DA8834;
+    opacity: 70%;
+    color: #FFFFFF;
+}
+.link1{
+    margin-left: 200px;
+}
+.link2{
+    margin-left: 160px;
+}
+.menu-itens a:hover{
+    background-color: #be6710;
+}
+.uppercard-text  {
+    margin-top: 60px;
+    margin-left: 300px;
+    width: 650px;
+    height: 162px;
+}
+.uppercard-text p{
+    margin-top: 9px;
+    font-size: 22px;
+    margin-bottom: 0;
+    letter-spacing: 29px;
+    margin-left: 75px;
+}
+.uppercard-text h1{
+    font-size: 88px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    width: 600px;
+}
+
+/*MENU DO CANTO */
+
+.checkbox-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox  {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+
+.checkbox .trace  {
+    width: 50px;
+    height: 2px;
+    background-color: #E4BE2E;
+    position: fixed;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1)  {
+    top: 26px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2)  {
+    top: 46px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3)  {
+    top: 66px;
+    transform: rotate(0);
+}
+
+#toggle  {
+    display: none;
+}
+
+/* MENU */
+
+.menu {
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    background-color: transparent;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px #ffe484;
+    z-index: -1;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-itens {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-itens ul{
+    list-style-type: none;
+}
+
+.menu-itens ul li a {
+    margin: 10px 0;
+    color: #E4BE2E;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+/* ANIMAÇÃO DO MENU DO CANTO */
+
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    top: 47px;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 48px;
+}
+
+#toggle:checked + .checkbox {
+    background-color: #a45047;
+    position: fixed;
+}
+
+#toggle:checked ~ .menu {
+    box-shadow: 0px 0px 0px 100vmax #a45047;
+    z-index: 1;
+    position: fixed;
+}
+
+#toggle:checked ~ .menu-itens {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* DESCRIÇÃO */
+
+.container  {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.titles  {
+    right: 90px;
+    font-size: 50px;
+    letter-spacing: 4px;
+    color: #1e1e2a;
+    margin-inline-start: 50px;
+}
+.texto-apresentacao  {
+    width: 90%;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #1e1e2a;
+    margin-inline-start: 90px;
+}
+.separator{
+    padding: .5em 0;
+    border-bottom: 1px solid #e1bf43;
+}
+.textos  {
+    width: 90%;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #1e1e2a;
+    margin-inline-start: 90px;
+}
+.imagens-hobbies{
+    justify-content: space-between;
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    margin-right: 100px;
+}
+.imagens-hobbies img{
+    width: 200px;
+    height: 200px;
+}
+
+/* AUTORIA */
+
+.footer  {
+    width: 100%;
+    height: 80px;
+    background-color: #a45047;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffe484;
+    font-size: 24px;
+}

@@ -1,0 +1,63 @@
+.pagina{
+    float: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.card{
+    background-color: #e6e6fa;
+    width: 350px;
+    height: 600px;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container{
+    padding: 2px 16px;
+}
+img{
+    width: 350px;
+    height: 350px;
+    border-radius: 5px 5px 0 0;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #7e66b6; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+a:link {
+    text-decoration: none;
+}
+.botao:hover{
+    background-color: #4f3c7f; 
+}
+p{
+    font-size: 25px;
+    color: #45346e;
+    font-style: bold;
+}
+
+.titulodescricao{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #4f3c7f;
+    font-size: 70px;
+}

@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+/* HEADER */
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background: #B8531E;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* APRESENTAÇÃO */
+
+.perfil{
+    display: flex;
+}
+.perfil-foto{
+    width: 260px;
+    height: 265px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 48px;
+    border: 5px dashed #FFDBB7;
+    border-radius: 139.5px;
+}
+.titulo{
+    margin-left: 50px;
+    width: 1105px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+}
+.titulo h1{
+    width: 987px;
+    height: 66px;
+    margin-left: 23px;
+    margin-top: 5px;
+
+    font-size: 75px;
+    line-height: 98px;
+    color: #F7CD32;
+}
+.titulo h3{
+    width: 679px;
+    height: 44px;
+    margin-left: 175px;
+    margin-top: 0px;
+
+    font-size: 30px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+.contato{
+    margin-top: 1rem;
+    display: flex;
+}
+.contato a{
+    text-decoration: none;
+    color: #e1bf43;
+    padding: 1rem 4rem;
+    border: 3px solid #E4BE2E;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.menu-items a {
+    text-decoration: none;
+    color: #ffffff;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease-in-out;
+}
+.contato a:hover{
+    background-color: #DA8834;
+    opacity: 70%;
+    color: #FFFFFF;
+}
+.link1{
+    margin-left: 200px;
+}
+.link2{
+    margin-left: 160px;
+}
+.menu-items a:hover {
+    background-color: #DA8834;
+}
+
+/* MENU DO CANTO */
+
+.checkbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+.checkbox .trace  {
+    width: 50px;
+    height: 2px;
+    background-color: #E4BE2E;
+    position: fixed;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+.checkbox .trace:nth-child(1)  {
+    top: 26px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(2)  {
+    top: 46px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(3)  {
+    top: 66px;
+    transform: rotate(0);
+}
+#toggle  {
+    display: none;
+}
+
+/* MENU */
+
+.menu{
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    background-color: transparent;
+    height: 4px;
+    width: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px #E4BE2E;
+    z-index: -1;
+    transition: 400ms ease-in-out 0s;
+}
+.menu-itens {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0s;
+}
+.menu-itens ul{
+    list-style-type: none;
+}
+li{
+    list-style: none;
+}
+.menu-itens ul li a {
+    margin: 10px 0;
+    color: #F7CD32;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+/* ANIMAÇÃO DO MENU DO CANTO */
+
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    top: 47px;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 48px;
+}
+
+#toggle:checked + .checkbox {
+    background-color: #b84a1e;
+    position: fixed;
+}
+
+#toggle:checked ~ .menu {
+    box-shadow: 0px 0px 0px 100vmax #b84a1e;
+    z-index: 1;
+    position: fixed;
+}
+
+#toggle:checked ~ .menu-itens {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* PROJETOS */
+
+.container-projetos  {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 0px;
+}
+.card-container  {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    align-items: center;
+    width: 90%;
+}
+.card  {
+    width: 554px;
+    height: 180px;
+    border: 100%;
+    margin: 3rem 0 0 0;
+    margin-bottom: 50px;
+    position: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5 ease-in-out;
+}
+.card a  {
+    margin-left: 48px;
+    position: relative;
+    display: inline-block;
+    font-size: 4.5em;
+    text-transform: uppercase;
+    color: #B8531E;
+    font-weight: 800;
+    text-decoration: none;
+    overflow: hidden;
+}
+span{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: transform 275ms ease;
+}
+a:hover span{
+    transform: translateX(0);
+}
+span::before{
+    display: inline-block;
+    content: attr(data-content);
+    color: #DA8834;
+    transform: translateX(100%);
+    transition: transform 275ms ease;
+    text-decoration: underline;
+    text-decoration-style: underline;
+    text-decoration-color: #E4BE2E;
+}
+a:hover span::before{
+    transform: translateX(0);
+}
+.card-text {
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 30px;
+    width: 40%;
+}
+.fotos-projetos{
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+}
+.fotos-projetos img{
+    height: 150px;
+    width: 150px;
+    margin: 10px;    
+}
+
+/* AUTORIA */
+
+.footer  {
+    width: 100%;
+    height: 80px;
+    background-color: #B8531E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffe484;
+    font-size: 24px;
+}
